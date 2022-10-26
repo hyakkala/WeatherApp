@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "d63e56eb-467b-45b8-87b4-2797a75adc8a",
+		"name": "WeatherApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3124841"
+	},
+	"item": [
+		{
+			"name": "Get Weather By LAT AND LON",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchType\": \"LAT_AND_LON\",\n    \"lat\": 39.8865,\n    \"lon\": -83.4483\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/weatherapp/weather/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"weatherapp",
+						"weather",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather By ZipCode",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"searchType\": \"LAT_AND_LON\",\n    \"lat\": 39.8865,\n    \"lon\": -83.4483\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/weatherapp/weather/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"weatherapp",
+						"weather",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather ByCityName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
